@@ -1,10 +1,17 @@
+{# templates/base.html #}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+  <title>{% block title %}{{ title }}{% endblock title %}</title>
 </head>
-<body>
 
+<body>
+  <header>
+    {% include "_navigation.html" %}
+  </header>
+  {% block content %}
+    <h1>Welcome to {{ title }}!</h1>
+  {% endblock content %}
 </body>
 </html>

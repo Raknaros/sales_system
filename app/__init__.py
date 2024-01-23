@@ -5,12 +5,12 @@ from flask_login import LoginManager
 app = Flask(__name__)
 
 #create the database
-db = SQLAlchemy(app)
+#db = SQLAlchemy(app)
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://admindb:72656770@localhost:3306/salessystem'
+#app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://admindb:72656770@localhost:3306/salessystem'
 
 #login start here
-login = LoginManager(app)
+#login = LoginManager(app)
 
 #@app.route('/')
 #def hello_world():  # put application's code here
