@@ -1,21 +1,16 @@
-import os
-from dotenv import load_dotenv
 from flask import Flask
+from flask_migrate import Migrate
+from flask_sqlalchemy import SQLAlchemy
+from flask_login import LoginManager
 
-from app import pages, posts, database, errors
-
-load_dotenv()
+from config import Config
 
 
-def create_app():
-    app = Flask(__name__)
-    app.config.from_prefixed_env()
+app = Flask(__name__)
+app.config.from_object(Config)
+db = SQLAlchemy(app)
+migrate = Migrate(app, db)
+login = LoginManager(app)
+login.login_view = 'login'
 
-    database.init_app(app)
-
-    app.register_blueprint(pages.bp)
-    app.register_blueprint(posts.bp)
-    app.register_error_handler(404, errors.page_not_found)
-    print(f"Current Environment: {os.getenv('ENVIRONMENT')}")
-    print(f"Using Database: {app.config.get('DATABASE')}")
-    return app
+from app import routes, models

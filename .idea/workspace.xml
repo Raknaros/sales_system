@@ -4,29 +4,41 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc830f5d-2a76-4dc2-b454-5d21628b69a7" name="Changes" comment="Index rdy">
-      <change afterPath="$PROJECT_DIR$/app/database.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/errors.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/pages.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/posts.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/schema.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/_navigation.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/errors/404.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/pages/about.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/pages/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/posts/create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/posts/posts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.flaskenv" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sales_system.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sales_system.iml" afterDir="false" />
+    <list default="true" id="dc830f5d-2a76-4dc2-b454-5d21628b69a7" name="Changes" comment="Mini Blog App Rdy">
+      <change afterPath="$PROJECT_DIR$/.flaskenv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/README" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/alembic.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/env.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/script.py.mako" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/versions/984e74d86301_users_table.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/versions/fbaf65d550a0_posts_table.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sales.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/database.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/errors.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/pages.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/posts.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/schema.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/_navigation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/errors/404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/pages/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/pages/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/posts/create.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/posts/posts.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,13 +86,16 @@
   &quot;associatedIndex&quot;: 0
 }</component>
   <component name="ProjectId" id="2bILIFxEW6GTzpCCA7AFYnfKz8s" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;Flask server.Flask (app.py).executor&quot;: &quot;Run&quot;,
     &quot;Flask server.sales_system.executor&quot;: &quot;Run&quot;,
@@ -99,11 +114,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/app/templates" />
       <recent name="$PROJECT_DIR$/app/templates/pages" />
       <recent name="$PROJECT_DIR$/app" />
       <recent name="$PROJECT_DIR$/" />
-      <recent name="D:\sales_system\app" />
     </key>
   </component>
   <component name="RunManager" selected="Flask server.sales_system">
@@ -128,8 +143,8 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Flask server.sales_system" />
       <item itemvalue="HTTP Request.All in generated-requests" />
+      <item itemvalue="Flask server.sales_system" />
     </list>
     <recent_temporary>
       <list>
@@ -160,7 +175,8 @@
       <workItem from="1706315138484" duration="3892000" />
       <workItem from="1706325508099" duration="2425000" />
       <workItem from="1706412828548" duration="5133000" />
-      <workItem from="1706466975592" duration="2650000" />
+      <workItem from="1706466975592" duration="13963000" />
+      <workItem from="1707515258627" duration="8979000" />
     </task>
     <task id="LOCAL-00001" summary="Index rdy">
       <option name="closed" value="true" />
@@ -178,15 +194,25 @@
       <option name="project" value="LOCAL" />
       <updated>1706041851335</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Mini Blog App Rdy">
+      <option name="closed" value="true" />
+      <created>1706470184619</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1706470184619</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Index rdy" />
-    <option name="LAST_COMMIT_MESSAGE" value="Index rdy" />
+    <MESSAGE value="Mini Blog App Rdy" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mini Blog App Rdy" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/sales_system$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1706031499839" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
